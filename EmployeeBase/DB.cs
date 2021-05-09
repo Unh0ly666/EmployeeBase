@@ -7,7 +7,7 @@ namespace EmployeeBase
 {
     class Database
     {
-        static string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Unh0ly\Desktop\EmployeeBase\EmployeeBase\Database1.mdf;Integrated Security=True";
+        static string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\EmployeeBase\EmployeeBase\Database1.mdf;Integrated Security=True";
         /// <summary>
         /// Данный метод загружает список сотрудников из базы данных.
         /// </summary>
