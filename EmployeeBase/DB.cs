@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace EmployeeBase
 {
     class Database
     {
-        static string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Unh0ly\Desktop\EmployeeBase\EmployeeBase\Database1.mdf;Integrated Security=True";
+        static string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=mydatabase;AttachDbFilename=" + new DirectoryInfo("../../../Database1.mdf").FullName + ";Integrated Security=True";
         /// <summary>
         /// Данный метод загружает список сотрудников из базы данных.
         /// </summary>
