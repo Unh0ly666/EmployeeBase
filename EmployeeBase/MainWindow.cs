@@ -58,6 +58,7 @@ namespace EmployeeBase
         private void ChangeRecordButton_Click(object sender, EventArgs e)
         {
             if (EmployeeTable.Rows.Count == 0) return;
+            EmployeeToAdd = null;
             int SelectedRowIndex = EmployeeTable.SelectedCells[0].RowIndex;
             Employee temp = ListOfEmployees[SelectedRowIndex];
 
